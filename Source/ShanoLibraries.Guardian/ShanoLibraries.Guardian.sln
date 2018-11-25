@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2050
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShanoLibraries.Guardian.Core", "ShanoLibraries.Guardian.Core\ShanoLibraries.Guardian.Core.csproj", "{ECCE4E34-94ED-42CF-9F85-25E9D84466CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShanoLibraries.Guardian.Demo", "ShanoLibraries.Guardian.Demo\ShanoLibraries.Guardian.Demo.csproj", "{2198CF4F-4AD9-4B1E-ACE8-1B555607038E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ECCE4E34-94ED-42CF-9F85-25E9D84466CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECCE4E34-94ED-42CF-9F85-25E9D84466CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECCE4E34-94ED-42CF-9F85-25E9D84466CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECCE4E34-94ED-42CF-9F85-25E9D84466CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2198CF4F-4AD9-4B1E-ACE8-1B555607038E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2198CF4F-4AD9-4B1E-ACE8-1B555607038E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2198CF4F-4AD9-4B1E-ACE8-1B555607038E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2198CF4F-4AD9-4B1E-ACE8-1B555607038E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DB280A49-D8F3-4554-8825-EE3A893C3250}
+	EndGlobalSection
+EndGlobal
