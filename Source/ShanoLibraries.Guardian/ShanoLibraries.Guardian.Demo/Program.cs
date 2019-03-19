@@ -1,24 +1,27 @@
 ﻿using ShanoLibraries.Guardian.Core;
+using ShanoLibraries.Guardian.Core.Guards;
 using System;
+using System.Runtime.ExceptionServices;
 
 namespace ShanoLibraries.Guardian.Demo
 {
     class Program
     {
-        public static Program SomeMethod(Program someParameter, int anotherParameter)
+        public void SomeMethod(string s, object someParameter, long anotherParameter)
         {
-            Keep.Argument
+            Guard.Argument
+                .Lambda(s, x => x.StartsWith("_"), nameof(s))
                 .NotNull(someParameter, nameof(someParameter))
-                .NotNull(someParameter, nameof(someParameter))
-                .InRange(anotherParameter, (0, 12), nameof(anotherParameter));
-
-
-            var value = new Program();
-
-            return Keep.Returning.NotNull(value, nameof(SomeMethod));
+                .NonNegative(anotherParameter, nameof(anotherParameter));
         }
         static void Main(string[] args)
         {
+            try { throw new Exception(); }
+            catch (Exception e)
+            {
+                var info = ExceptionDispatchInfo.Capture(e);
+            }
+            new Program().SomeMethod("_goshu", new object(), -2);
             Console.WriteLine("Hello World!");
         }
     }
